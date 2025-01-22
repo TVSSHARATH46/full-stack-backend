@@ -96,5 +96,5 @@ app.delete('/users/:id', async (req, res) => {
     const {id} = req.params
     const deleteQuery = `DELETE FROM userData WHERE id = '${id}'`
     await db.run(deleteQuery)
-    res.send("deleted successfully")
+    res.send("deleted")
 })
