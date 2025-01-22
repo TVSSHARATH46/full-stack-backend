@@ -1,13 +1,13 @@
-#getting full table
+//getting full table
 GET http://localhost:4606/users
 
 ###
 
-#getting specific item from userData table
+//getting specific item from userData table
 GET http://localhost:4606/users/60692e00-8bf6-414a-82bc-95b8362818ee
 ###
 
-#creating(i.e., adding) new item in userData table
+//creating(i.e., adding) new item in userData table
 POST  http://localhost:4606/users
 Content-type: application/json
 
@@ -27,6 +27,6 @@ Content-Type: application/json
 }
 
 ###
-#deleting item from userData table
+//deleting item from userData table
 DELETE http://localhost:4606/users/c917b2e0-2cc4-41e3-a524-54a0e8168fbd
 Content-Type: application/json
